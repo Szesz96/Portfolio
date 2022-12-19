@@ -91,7 +91,7 @@ body {
     padding: 10px 20px;
 }
 
-.projects h2 {
+.projects h2, .about-me h2 {
     margin-top: 60px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -99,7 +99,7 @@ body {
     text-shadow: 2px 2px 4px black;
 }
 
-.projects {
+.projects, .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,4 +195,41 @@ body {
 
 .third {
     background-image: url(./img/hut-g1beaf9d5c_1280.png);
+}
+
+
+
+
+
+@media (min-height: 576px) {
+
+    .heaqding {
+        font-size: 35px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-description {
+        height: 40%;
+    }
+
+    .project-description p, .project-description button{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .project {
+        margin-bottom: 0px;
+        height: 350px;
+        width: 80vw;
+    }
+}
+
+@media (min-height: 576px), (max-height: 768px) {
+
+    .project {
+        height: 250px;
+    }
 }
